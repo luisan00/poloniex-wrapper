@@ -70,6 +70,7 @@ class trading:
 		}
 		response = urllib2.urlopen(urllib2.Request('https://poloniex.com/tradingApi', data, headers))
 		return json.loads(response.read(), 'UTF-8')
+
 	# Trading methods
 	def returnBalances(self):
 		pass
