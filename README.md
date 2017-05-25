@@ -1,4 +1,8 @@
 # poloniexWrapper
 Wrapper for Poloniex API methods 
 
-## License <a href="./LICENSE">></a>
+## Requeriments
+-
+## License 
+
+<a href="./LICENSE"></a>
