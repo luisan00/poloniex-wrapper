@@ -5,8 +5,9 @@ import time, json
 import hmac, hashlib
 
 # Public methods
+# Working...
 class public:
-	
+
     def request(self, endpoint):
     	me = urllib2.urlopen(urllib2.Request(endpoint))
         return json.loads(me.read(), 'UTF-8')
@@ -47,6 +48,7 @@ class public:
 
 # Trading methods
 # API Key is required
+# Work in progress!!
 class trading():
 
 	def __init__(self, sign):
