@@ -7,7 +7,7 @@ import hmac, hashlib
 # Public methods
 class public:
 	
-	def request(self, endpoint):
+    def request(self, endpoint):
     	me = urllib2.urlopen(urllib2.Request(endpoint))
         return json.loads(me.read(), 'UTF-8')
 
