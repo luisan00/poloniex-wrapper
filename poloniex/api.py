@@ -6,9 +6,15 @@ import hmac, hashlib
 
 # Public methods
 # Working...
+
 class public:
 
     def request(self, endpoint):
+        '''
+        @param endpoint:
+        @type endpoint: String
+        @return: JSON
+        '''
     	me = urllib2.urlopen(urllib2.Request(endpoint))
         return json.loads(me.read(), 'UTF-8')
 
@@ -19,6 +25,10 @@ class public:
         return self.request('https://poloniex.com/public?command=return24hVolume')
 
     def returnOrderBook (self, currencyPair, depth = 10):
+        '''
+        @param currencyPair: Market for this method
+        @param depth: Optional, default value is 10
+        '''
     	return self.request('''
     		https://poloniex.com/public?command=returnOrderBook&currencyPair=%s&depth=%s
             ''' % (currencyPair, depth))
