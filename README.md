@@ -4,21 +4,21 @@ Wrapper for Poloniex API methods .
 ## What is this:
 Simple wrapper in python for poloniex trading platform.
 
-## Requeriments
+### Requeriments
 - Python 3+
 - autobahn
-## How to
+### How to
 Install dependencies with pip:
 
-> pip install autobahn
+_sudo pip install autobahn_
 
 or with pip3:
 
-> pip3 install autobahn
+_sudo pip3 install autobahn_
 
 Copy/Download or clone to your project.
 
-> git clone
+_git clone https://github.com/luisan00/poloniex-wrapper.git_
 
 ## License 
 This software is under a MIT license.
