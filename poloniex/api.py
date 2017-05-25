@@ -49,13 +49,13 @@ class public:
 # Trading methods
 # API Key is required
 # Work in progress!!
-class trading():
+class trading:
 
 	def __init__(self, sign):
 		self.key = sign['key']
 		self.secret = sign['secret']
 
-	def request(self, command, args):
+		def request(self, command, args):
 
 		requestData = {
 			'command': command,
