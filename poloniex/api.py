@@ -33,9 +33,6 @@ class public():
                 ''' % (currencyPair, start, end))
 
     def returnChartData(self, currencyPair, period, start, end):
-        '''
-        Valid period: 300, 900, 1800, 7200, 14400 or  86400
-        '''
     	return self.request('''
     		https://poloniex.com/public?command=returnChartData&currencyPair=%s&period=%S&start=%s&end=%s
             ''' % (currencyPair, period, start, end))
