@@ -5,8 +5,8 @@ import time, json
 import hmac, hashlib
 
 # Public methods
-class public():
-	
+class public:
+
 	def request(self, endpoint):
     	me = urllib2.urlopen(urllib2.Request(endpoint))
         return json.loads(me.read(), 'UTF-8')
@@ -39,7 +39,7 @@ class public():
 
     def returnCurrencies(self):
         return self.request('https://poloniex.com/public?command=returnCurrencies')
-        
+
     def returnLoanOrders(self, currency):
         return self.request('''
             https://poloniex.com/public?command=returnLoanOrders&currency=%s
@@ -59,7 +59,7 @@ class trading():
 			'command': command,
 			'nonce': int(time.time()*1000)
 			}
-		
+
 		data = urllib.urlencode(requestData)
 		auth = hmac.new(self.secret, data, hashlib.sha512).hexdigest()
 		headers = {
@@ -71,81 +71,81 @@ class trading():
 	# Trading methods
 	def returnBalances(self):
 		pass
-	
+
 	def returnCompleteBalances(self):
 		pass
-	
+
 	def returnDepositAddresses(self):
 		pass
-	
+
 	def generateNewAddress(self, currency):
 		pass
-		
+
 	def returnDepositsWithdrawals(self, start, end):
 		pass
-	
+
 	def returnOpenOrders(self, currencyPair='all'):
 		pass
-	
+
 	def returnTradeHistory(self, currencyPair='all'):
 		pass
-	
+
 	def returnOrderTrades(self, orderNumber):
 		pass
-	
+
 	def buy(self, currencyPair, rate, amount):
 		pass
-	
+
 	def sell(self, currencyPair, rate, amount):
 		pass
-	
+
 	def cancelOrder(self, orderNumber):
 		pass
-	
+
 	def moveOrder(self, orderNumber, rate, amount=None):
 		pass
-	
+
 	def withdraw(self, currency, amount, address):
 		pass
-		
+
 	def returnFeeInfo(self):
 		pass
-	
+
 	def returnAvailableAccountBalances(self, account=None):
 		pass
-	
+
 	def returnTradableBalances(self):
 		pass
-	
+
 	def transferBalance(self, currency, amount, fromAccount, toAccount):
 		pass
 	# Margin methods
 	def marginBuy(self):
 		pass
-	
+
 	def marginSell(self):
 		pass
-	
+
 	def getMarginPosition(self):
 		pass
-	
+
 	def closeMarginPosition(self):
 		pass
 	# Loans methods
 	def createLoanOffer(self):
 		pass
-	
+
 	def cancelLoanOffer(self):
 		pass
-	
+
 	def returnOpenLoanOffers(self):
 		pass
-	
+
 	def returnActiveLoans(self):
 		pass
-	
+
 	def returnLendingHistory(self, start, end):
 		pass
-	
+
 	def toggleAutoRenew(self, orderNumber):
 		pass
