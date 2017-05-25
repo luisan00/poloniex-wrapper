@@ -136,18 +136,13 @@ class trading:
 	# Loans methods
 	def createLoanOffer(self):
 		pass
-
 	def cancelLoanOffer(self):
 		pass
-
 	def returnOpenLoanOffers(self):
 		pass
-
 	def returnActiveLoans(self):
 		pass
-
 	def returnLendingHistory(self, start, end):
 		pass
-
 	def toggleAutoRenew(self, orderNumber):
 		pass
