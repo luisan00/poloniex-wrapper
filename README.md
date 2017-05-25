@@ -1,8 +1,12 @@
-# poloniexWrapper
-Wrapper for Poloniex API methods 
+# poloniex-wrapper
+Wrapper for Poloniex API methods .
+
+## What is this:
+Simple wrapper in python for poloniex trading platform.
 
 ## Requeriments
--
+- Python 3+
+
 ## License 
 This software is under a MIT license.
 
