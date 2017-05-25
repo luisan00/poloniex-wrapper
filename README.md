@@ -6,6 +6,19 @@ Simple wrapper in python for poloniex trading platform.
 
 ## Requeriments
 - Python 3+
+- autobahn
+## How to
+Install dependencies with pip:
+
+> pip install autobahn
+
+or with pip3:
+
+> pip3 install autobahn
+
+Copy/Download or clone to your project.
+
+> git clone
 
 ## License 
 This software is under a MIT license.
